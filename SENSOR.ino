@@ -1,10 +1,17 @@
 void readPower() {
-   vac = pzem_r.voltage();
-   iac = pzem_r.current();
-   freq = pzem_r.frequency();
-   pf = pzem_r.pf();
-   powerAC = pzem_r.power();
-   energyAC = pzem_r.energy();
+  //  vac = pzem_r.voltage();
+  //  iac = pzem_r.current();
+  //  freq = pzem_r.frequency();
+  //  pf = pzem_r.pf();
+  //  powerAC = pzem_r.power();
+  //  energyAC = pzem_r.energy();
+
+   vac = random(0,10) / 100.00;
+   iac = random(10,20) / 100.00;
+   freq = random(20,30) / 100.00;
+   pf = random(30,40) / 100.00;
+   powerAC = random(50,60) / 100.00;
+   energyAC = random(60,80) / 100.00;
 }
 
 void readMode() {
